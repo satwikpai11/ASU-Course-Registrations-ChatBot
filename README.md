@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# ASU Course Registrations ChatBot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The ASU Course Registrations ChatBot is a conversational assistant designed to help students query and explore Arizona State University course registration information using natural language.  
+The chatbot processes user queries, interprets intent, and retrieves relevant course data from a structured dataset.
 
-## Available Scripts
+This project demonstrates applied natural language processing, intent handling, and chatbot based information retrieval for academic course systems.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Natural language course queries
+- Supports conversational queries related to ASU course registration
+- Interprets user intent to identify relevant course information
+- Handles common student queries such as course availability and registration related questions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Dataset driven responses
+- Uses a structured dataset containing ASU course registration information
+- Maps user queries to dataset fields to retrieve accurate responses
+- Ensures consistent and repeatable outputs based on available data
 
-### `npm test`
+### Modular chatbot architecture
+- Clean separation between data loading, query processing, and response generation
+- Designed for easy extension to support additional intents or datasets
+- Suitable for academic and prototype deployment scenarios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Programming Language**: Python
+- **Chatbot Logic**: Rule based intent handling
+- **Data Handling**: CSV based course dataset
+- **Environment**: Local execution
+- **IDE**: VS Code or any Python supported IDE
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Repository Structure
 
-### `npm run eject`
+ASU-Course-Registrations-ChatBot-main/
+data/
+courses.csv
+chatbot.py
+requirements.txt
+README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How the ChatBot Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. The user enters a course related question in natural language
+2. The chatbot preprocesses the input text
+3. Intent is identified using rule based logic
+4. Relevant course information is extracted from the dataset
+5. A formatted response is returned to the user
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
+- Python 3.8 or later
+- pip package manager
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
+1. Clone the repository
+   git clone https://github.com/yourusername/ASU-Course-Registrations-ChatBot.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+	2.	Navigate to the project directory
 
-### Analyzing the Bundle Size
+cd ASU-Course-Registrations-ChatBot-main
+	3.	Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+pip install -r requirements.txt
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+⸻
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Running the ChatBot
 
-### Deployment
+Execute the chatbot script using:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+python chatbot.py
 
-### `npm run build` fails to minify
+Once running, you can enter course related questions directly in the terminal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⸻
+
+Example Queries
+	•	What courses are available for CSE this semester
+	•	Show me information about EEE courses
+	•	Is a specific course open for registration
+
+⸻
