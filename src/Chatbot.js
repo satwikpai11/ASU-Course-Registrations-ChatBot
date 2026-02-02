@@ -31,7 +31,7 @@ function Chatbot() {
     
             // Corrected API Request
             const response = await axios.post(
-                "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-preview:generateContent?key=AIzaSyDjGQvY7wJ5ApqyMPXWu7e2UCTrOJHoIHI",
+                "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-preview:generateContent?key=<key>",
                 {
                     contents: [
                         { parts: [{ text: `Here is the ASU course schedule:\n${courseInfo}\n\nUser query: ${input}` }] }
